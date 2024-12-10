@@ -612,7 +612,7 @@ h6 {
 }
 
 .footer .footer-links {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .footer .footer-links ul {
@@ -628,8 +628,8 @@ h6 {
 }
 
 .footer .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
+  padding: 0 0 10px 0;
+  /* display: flex; */
   align-items: center;
 }
 
