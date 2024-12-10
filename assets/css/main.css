@@ -1443,11 +1443,43 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Thêm khoảng cách giữa các mục */
+  height: 100%; /* Đảm bảo chiều cao của toàn bộ khối */
+}
+
+.contact .info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa biểu tượng và nội dung */
+}
+
+.contact .map-container {
+  flex-grow: 1; /* Bản đồ chiếm phần còn lại */
+  overflow: hidden; /* Ẩn nội dung thừa nếu cần */
+  border-radius: 8px; /* Bo góc để đẹp hơn */
+}
+
+.contact .map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Xóa viền iframe */
 }
 
 @media (max-width: 575px) {
   .contact .info-wrap {
     padding: 20px;
+    gap: 15px; /* Giảm khoảng cách giữa các mục trên màn hình nhỏ */
+  }
+
+  .contact .info-item {
+    flex-direction: column; /* Chuyển sang bố cục dọc để dễ đọc */
+    align-items: flex-start; /* Căn trái nội dung */
+  }
+
+  .contact .map-container {
+    height: 300px; /* Giới hạn chiều cao bản đồ trên màn hình nhỏ */
   }
 }
 
